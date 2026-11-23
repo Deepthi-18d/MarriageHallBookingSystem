@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Hall Booking Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Marriage Hall Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="bookings.html">Manage Bookings</a>
+                <a class="nav-link" href="reports.html">Booking Reports</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="welcome-section mb-4">
+        <h2 class="fw-bold">Marriage Hall Booking Dashboard</h2>
+        <p class="text-muted">Manage hall reservations, customer bookings and reports.</p>
+    </div>
+
+    <div id="alertMessage" class="alert d-none" role="alert"></div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="card dashboard-card">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Total Bookings</p>
+                    <h2 id="totalBookings">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card dashboard-card">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Confirmed Bookings</p>
+                    <h2 id="confirmedBookings">0</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card dashboard-card">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Pending Bookings</p>
+                    <h2 id="pendingBookings">0</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="fw-bold mb-3">Manage Your Bookings</h4>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card action-card h-100">
+                <div class="card-body p-4">
+                    <h5>Manage Hall Bookings</h5>
+                    <p class="text-muted">Add new bookings, view existing records, update booking details and delete bookings.</p>
+                    <a href="bookings.html" class="btn btn-primary">Open Booking Management</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card action-card h-100">
+                <div class="card-body p-4">
+                    <h5>Booking Reports</h5>
+                    <p class="text-muted">Generate reports using event dates, minimum hall capacity and booking status.</p>
+                    <a href="reports.html" class="btn btn-primary">Open Booking Reports</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-3">
+    <small>Marriage Hall Booking Management System</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
